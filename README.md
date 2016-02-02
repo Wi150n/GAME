@@ -1,5 +1,2 @@
-# READ ME
-The following is a project for CSC 3380 (Object-Oriented Design)
+# This project is for CSC 3380 (OOD)
 Members: Aaron Dupont, Blake Allen, Jason Lee, Wilson Zhu
-
-*** THIS PROJECT IS STRICTLY FOR EDUCATIONAL PURPOSES ONLY ***
