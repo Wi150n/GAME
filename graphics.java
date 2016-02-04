@@ -3,7 +3,7 @@ package com.CSC3380_Project.framework;
 // The graphics interface
 public interface graphics {
   public static enum ImageFormat {
-      ARGB8888, ARGB4444, RGB565
+    ARGB8888, ARGB4444, RGB565
   }
 
   public image newImage(String fileName, ImageFormat format);
