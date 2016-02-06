@@ -2,4 +2,4 @@
 Members: Aaron Dupont, Blake Allen, Jason Lee, Wilson Zhu
 
 Event Log:
-- 2/4/2016: finished Android framework (Wilson)
+- 2/4/2016: finished basic framework (Wilson)
