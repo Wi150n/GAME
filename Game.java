@@ -59,23 +59,20 @@ public class Game extends Canvas implements Runnable {
             while (delta >= 1) {
                 tick();
                 delta--;
-                System.out.println(Hud.HP);
             }
             if (working) {
                 render();
             }
             frames++;
-			
-            if (System.currentTimeMillis() - timer > 1000) {
+          /*  if (System.currentTimeMillis() - timer > 1000) {
                 timer += 1000;
                 //System.out.println("FPS =>" + frames);
-                System.out.println(handler.object +" ,"+handler.counter);
+                //System.out.println(handler.object +" ,"+handler.counter);
                 //System.out.println(Hud.HP);
                 tickcounter = 0;
                 frames = 0;
                 
-            }
-        	
+            }*/
         }
         stop();
     }
