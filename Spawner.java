@@ -22,7 +22,7 @@ public class Spawner {
         if (ScoreTmp >= 250) {
             ScoreTmp = 0;
             hud.lvl(hud.getlvl() + 1);
-            if (hud.getlvl()%12 == 0)
+            if (hud.getlvl()%4 == 0)
             	{
             	handler.add(new Follower(rand.nextInt(Game.WIDTH), rand.nextInt(Game.SPAWNABLE_AREA), ID.Follower, handler, handler.counter));
             	}
@@ -39,11 +39,11 @@ public class Spawner {
             if (hud.getlvl()%2 == 0) {
                 handler.add(new Enemy(rand.nextInt(Game.WIDTH), rand.nextInt(Game.SPAWNABLE_AREA), ID.Enemy, handler, handler.counter));
               }  
-          /*  
+           
             if (hud.getlvl()%4 == 0) {
                 handler.add(new SpeedyE(rand.nextInt(Game.WIDTH), rand.nextInt(Game.SPAWNABLE_AREA), ID.SpeedyE, handler, handler.counter));
             }    
-            if (hud.getlvl() == 10) {
+            /* if (hud.getlvl() == 10) {
                 handler.clearAll();
                 handler.add(new Boss1((Game.WIDTH / 2) - 30, Game.HEIGHT / 2, ID.Boss1, handler, handler.counter));
             }
