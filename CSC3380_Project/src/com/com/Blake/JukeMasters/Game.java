@@ -9,7 +9,7 @@ import java.util.Random;
  *
  * @author BlakeAllen
  */
-public class Game extends Canvas implements Runnable {
+public class Game extends AndroidGame { // old: extends Canvas and implements runnables
 
     public static final int WIDTH = 1020;
     public static final int HEIGHT = WIDTH / 12 * 9;
