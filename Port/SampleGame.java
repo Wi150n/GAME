@@ -1,4 +1,4 @@
-// some package
+package com.CSC_
 
 // import some stuff
 
