@@ -1,7 +1,7 @@
 package com.cs3380.project.screen;
 
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch; // I dont think we need this here...
+import com.badlogic.gdx.math.Vector2; // I dont think we need this here...
 import com.cs3380.project.camera.OrthoCamera;
 
 public class MenuScreen extends Screen{
