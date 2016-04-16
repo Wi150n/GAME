@@ -16,17 +16,18 @@ public class MenuScreen extends Screen{
 		skin = new Skin(Gdx.files.internal("ui.json");
 		stage = new Stage(new ScreenViewport());
 		
-		final TextButton button = new TextButton("PLAY", skin, "default");
-		button.setWidth(200);
-		button.setHeight(50);
-		button.addListener(new ClickListener() {
+		// The PLAY button, which starts the game when pressed
+		final TextButton playButton = new TextButton("PLAY", skin, "default");
+		playButton.setWidth(200);
+		playButton.setHeight(50);
+		playButton.addListener(new ClickListener() {
 			 @Override
 			 public void clicked(InputEvent event, float x, float y) {
-			 	ScreenManager.set
+			 	ScreenManager.setScreen(new GameScreen);
 			 }
 		});
 		
-		stage.addActor(button);
+		stage.addActor(playButton);
 		Gdx.input.setInputProcessor(stage);
 	}
 	
