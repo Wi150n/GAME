@@ -1,5 +1,5 @@
 # JukeMasters
-##The following project is for the class CSC 3380 (Object-Oriented Design)
+##The following project is a game for the class CSC 3380 (Object-Oriented Design)
 
 ##Team members:
 
