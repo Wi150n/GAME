@@ -1,17 +1,22 @@
 package com.cs3380.project.screen;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.Vector2; // this is a tester
+import com.badlogic.gdx.math.Vector2;
 import com.cs3380.project.camera.OrthoCamera;
-import com.cs3380.project.entity.Player; // this is a tester
 
 public class MenuScreen extends Screen{
 
 	private OrthoCamera camera;
+	Skin skin; // Edited; Github
+	Stage stage; // Edited; Github
+	SpriteBatch batch; // Edited; Github
 	
 	@Override
 	public void create() {
 		camera  = new OrthoCamera();
+		skin = new Skin(Gdx)
+		batch = new SpriteBatch();
+		
 	}
 	
 	@Override
