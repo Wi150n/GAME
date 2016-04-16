@@ -1,33 +1,43 @@
 package com.cs3380.project.screen;
 
-import com.badlogic.gdx.graphics.g2d.SpriteBatch; // I dont think we need this here...
-import com.badlogic.gdx.math.Vector2; // I dont think we need this here...
-import com.cs3380.project.camera.OrthoCamera;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.cs3380.project.camera.OrthoCamera; // Don't need?
 
 public class MenuScreen extends Screen{
 
-	private OrthoCamera camera;
-	Skin skin; // Edited; Github
-	Stage stage; // Edited; Github
+	private OrthoCamera camera; // Don't need?
+	private Skin skin;
+	private Stage stage;
+	private Table table;
+	private TextButton playButton;
+	private TextButton instrButton;
+	private SpriteBatch batch;
 	
 	@Override
 	public void create() {
-		camera  = new OrthoCamera();
+		camera  = new OrthoCamera(); // Don't need?
 		skin = new Skin(Gdx.files.internal("ui.json");
 		stage = new Stage(new ScreenViewport());
 		
-		// The PLAY button, which starts the game when pressed
-		final TextButton playButton = new TextButton("PLAY", skin, "default");
-		playButton.setWidth(200);
-		playButton.setHeight(50);
-		playButton.addListener(new ClickListener() {
-			 @Override
-			 public void clicked(InputEvent event, float x, float y) {
-			 	ScreenManager.setScreen(new GameScreen);
-			 }
-		});
+		// The canvas for the buttons
+		table = new Table();
+		table.setWidth(stage.getWidth());
+		table.align(Align.center | Align.bottom);
+		table.setPosition(0, Gdx.graphics.getHeight());
 		
-		stage.addActor(playButton);
+		// The buttons: PLAY, INSTR
+		playButton = new TextButton("PLAY", skin);
+		instrButton = new TextButton("INSTR", skin);
+		
+		table.padTop(30);
+		table.add(playButton).padBottom(30);
+		table.row();
+		table.add(instrButton);
+		
+		batch = new SpriteBatch();
+		sprite = TextureManager.
+		
+		stage.addActor(table);
 		Gdx.input.setInputProcessor(stage);
 	}
 	
