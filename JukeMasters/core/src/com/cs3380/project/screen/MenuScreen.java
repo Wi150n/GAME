@@ -6,16 +6,17 @@ import com.cs3380.project.camera.OrthoCamera;
 
 public class MenuScreen extends Screen{
 
-	private OrthoCamera camera; // Need?
+	private OrthoCamera camera;
 	Skin skin; // Edited; Github
 	Stage stage; // Edited; Github
 	
 	@Override
 	public void create() {
-		camera  = new OrthoCamera(); // Need?
+		camera  = new OrthoCamera();
 		skin = new Skin(Gdx.files.internal("ui.json");
-		stage = new Stage()
+		stage = new Stage(new ScreenViewport());
 		
+		Gdx.input.setInputProcessor(stage);
 	}
 	
 	@Override
@@ -25,10 +26,13 @@ public class MenuScreen extends Screen{
 	
 	@Override
 	public void render(SpriteBatch batch) {
-		batch.setProjectionMatrix(camera.combined);
-		batch.begin();
+		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		stage.act(Gdx.graphics.getDeltaTime());
+		stage.draw();
+		//batch.setProjectionMatrix(camera.combined);
+		//batch.begin();
 		// render some stuff here
-		batch.end();
+		//batch.end();
 	}
 
 	@Override
