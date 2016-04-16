@@ -4,7 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.cs3380.project.screen.GameScreen;
+import com.cs3380.project.screen.MenuScreen;
 import com.cs3380.project.screen.ScreenManager;
 
 public class MainGame extends ApplicationAdapter {
@@ -16,7 +16,7 @@ public class MainGame extends ApplicationAdapter {
 	@Override
 	public void create() {
 		batch = new SpriteBatch();
-		ScreenManager.setScreen(new GameScreen());
+		ScreenManager.setScreen(new MenuScreen());
 	}
 	
 	@Override
