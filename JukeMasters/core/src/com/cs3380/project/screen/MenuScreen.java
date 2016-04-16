@@ -6,16 +6,15 @@ import com.cs3380.project.camera.OrthoCamera;
 
 public class MenuScreen extends Screen{
 
-	private OrthoCamera camera;
+	private OrthoCamera camera; // Need?
 	Skin skin; // Edited; Github
 	Stage stage; // Edited; Github
-	SpriteBatch batch; // Edited; Github
 	
 	@Override
 	public void create() {
-		camera  = new OrthoCamera();
-		skin = new Skin(Gdx)
-		batch = new SpriteBatch();
+		camera  = new OrthoCamera(); // Need?
+		skin = new Skin(Gdx.files.internal("ui.json");
+		stage = new Stage()
 		
 	}
 	
