@@ -16,6 +16,17 @@ public class MenuScreen extends Screen{
 		skin = new Skin(Gdx.files.internal("ui.json");
 		stage = new Stage(new ScreenViewport());
 		
+		final TextButton button = new TextButton("PLAY", skin, "default");
+		button.setWidth(200);
+		button.setHeight(50);
+		button.addListener(new ClickListener() {
+			 @Override
+			 public void clicked(InputEvent event, float x, float y) {
+			 	ScreenManager.set
+			 }
+		});
+		
+		stage.addActor(button);
 		Gdx.input.setInputProcessor(stage);
 	}
 	
