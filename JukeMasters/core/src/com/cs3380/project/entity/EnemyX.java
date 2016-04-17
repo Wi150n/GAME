@@ -12,6 +12,7 @@ public class EnemyX extends Entity {
 
 	@Override
 	public void update() {
+		setDirection(Player.direction);
 		position.add(direction);
 	}
 	
