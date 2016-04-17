@@ -3,7 +3,7 @@ package com.cs3380.project.screen;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.cs3380.project.camera.OrthoCamera; // Don't need?
 
-public class MenuScreen extends Screen{
+public class MenuScreen extends Screen implements InputProcessor {
 
 	private OrthoCamera camera; // Don't need?
 	private Skin skin;
@@ -35,7 +35,8 @@ public class MenuScreen extends Screen{
 		table.add(instrButton);
 		
 		batch = new SpriteBatch();
-		sprite = TextureManager.
+		sprite = TextureManager.MENU_BACKGROUND;
+		sprite.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		
 		stage.addActor(table);
 		Gdx.input.setInputProcessor(stage);
@@ -49,6 +50,9 @@ public class MenuScreen extends Screen{
 	@Override
 	public void render(SpriteBatch batch) {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		batch.begin();
+		sprite.draw(batch);
+		batch.end();
 		stage.act(Gdx.graphics.getDeltaTime());
 		stage.draw();
 		//batch.setProjectionMatrix(camera.combined);
