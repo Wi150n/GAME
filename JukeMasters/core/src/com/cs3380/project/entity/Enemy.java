@@ -5,8 +5,8 @@ import com.badlogic.gdx.math.Vector2;
 
 public class Enemy extends Entity {
 
-	public Enemy(Texture texture, Vector2 position, Vector2 direction) {
-		super(texture, position, direction);
+	public Enemy(Vector2 position, Vector2 direction) {
+		super(TextureManager.ENEMY, position, direction);
 	}
 
 	@Override
