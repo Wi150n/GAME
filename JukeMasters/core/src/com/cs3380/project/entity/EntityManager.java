@@ -14,6 +14,7 @@ public class EntityManager {
 		for(int i = 0; i < amount; i++) {
 			float x = MathUtils.random(0, MainGame.WIDTH - TextureManager.ENEMY.getWidth());
 			float y = MathUtils.random(0, MainGame.HEIGHT - TextureManager.ENEMY.getHeight());
+			addEntity(new Enemy(x, y);
 		}
 	}
 	
