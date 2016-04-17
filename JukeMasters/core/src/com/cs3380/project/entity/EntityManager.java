@@ -7,9 +7,13 @@ import com.badlogic.gdx.utils.Array;
 public class EntityManager {
 	
 	private final Array<Entity> entities = new Array<Entity>();
+	private static final int MAX_ENEMY = 20;
+	private static final int MAX_ENEMY_X = 10;
+	private int spawned;
+	// Timer
 	private final Player player;
 	
-	public EntityManager(int amount) {
+	public EntityManager() {
 		player = new Player(new Vector2(510, 383), new Vector2(0, 0));
 		for(int i = 0; i < amount; i++) {
 			float posX = MathUtils.random(0, MainGame.WIDTH - TextureManager.ENEMY.getWidth());
@@ -21,6 +25,7 @@ public class EntityManager {
 	}
 	
 	public void update() {
+		// if current timer % 50 => refer to line 19 to 23
 		for(Entity e : entities)
 			e.update();
 		player.update();
