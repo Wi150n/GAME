@@ -29,6 +29,20 @@ public class MenuScreen extends Screen implements InputProcessor {
 		playButton = new TextButton("PLAY", skin);
 		instrButton = new TextButton("INSTR", skin);
 		
+		playButton.addListener(new ClickListener() {
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				ScreenManager.setScreen(new GameScreen());
+			}
+		});
+		
+		instrButton.addListener(new ClickListener() {
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				ScreenManager.setScreen(new HelpScreen()); // need to add help screen
+			}
+		});
+		
 		table.padTop(30);
 		table.add(playButton).padBottom(30);
 		table.row();
@@ -40,6 +54,7 @@ public class MenuScreen extends Screen implements InputProcessor {
 		sprite = TextureManager.MENU_BACKGROUND;
 		sprite.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		
+		InputMultiplexer input = new InputMultiplexer(stage, this);
 		Gdx.input.setInputProcessor(stage);
 	}
 	
