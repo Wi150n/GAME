@@ -1,7 +1,7 @@
 package com.cs3380.project.screen;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.cs3380.project.camera.OrthoCamera; // Don't need?
+import com.cs3380.project.camera.OrthoCamera; // Don't need? Need to add more classes
 
 public class MenuScreen extends Screen implements InputProcessor {
 
