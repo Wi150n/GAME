@@ -11,6 +11,10 @@ public class EntityManager {
 	
 	public EntityManager(int amount) {
 		player = new Player(new Vector2(510, 383), new Vector2(0, 0));
+		for(int i = 0; i < amount; i++) {
+			float x = MathUtils.random(0, MainGame.WIDTH - TextureManager.ENEMY.getWidth());
+			float y = MathUtils.random(0, MainGame.HEIGHT - TextureManager.ENEMY.getHeight());
+		}
 	}
 	
 	public void update() {
