@@ -34,11 +34,12 @@ public class MenuScreen extends Screen implements InputProcessor {
 		table.row();
 		table.add(instrButton);
 		
+		stage.addActor(table);
+		
 		batch = new SpriteBatch();
 		sprite = TextureManager.MENU_BACKGROUND;
 		sprite.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		
-		stage.addActor(table);
 		Gdx.input.setInputProcessor(stage);
 	}
 	
