@@ -9,6 +9,7 @@ public class EntityManager {
 	private final Array<Entity> entities = new Array<Entity>();
 	private static final int MAX_ENEMY = 20;
 	private static final int MAX_ENEMY_X = 10;
+	private Vector2 playerPos; // continuosly update player pos in update, 
 	private int spawned;
 	// Timer
 	private final Player player;
