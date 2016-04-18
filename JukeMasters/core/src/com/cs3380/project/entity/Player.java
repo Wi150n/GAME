@@ -32,7 +32,6 @@ public class Player extends Entity{
 			setDirection(0, 300);
 		else if(Gdx.input.isKeyPressed(Keys.DPAD_DOWN))
 			setDirection(0, -300);
-		
 		else
 			setDirection(0, 0);
 	}
