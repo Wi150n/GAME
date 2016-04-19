@@ -5,7 +5,7 @@
 
 - Wilson Zhu (Developer)
 - Blake Allen (Developer)
-- Jason Lee (Freeloader; graphics designer)
+- Jason Lee (Troll on your face; Freeloader; graphics designer)
 - Aaron Dupont (Team manager)
 
 # NOTE: PLEASE PLACE ALL YOUR DAMN PNG FILES IN THE PNG_FOLDER
