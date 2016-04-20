@@ -9,3 +9,4 @@
 - Aaron Dupont (Team manager)
 
 # NOTE: PLEASE PLACE ALL YOUR DAMN PNG FILES IN THE PNG_FOLDER
+## DEBUGGING: http://www.dummies.com/how-to/content/how-to-test-an-android-app-on-a-real-device.html
