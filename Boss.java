@@ -6,16 +6,23 @@ import com.cs3380.project.TextureManager;
 
 public class Boss extends Entity {
 	
-	private int fireRate;
+	private int buffRate;
+	private float startTime;
+	private final EntityManager entityManager;
 	
-	public Enemy(Vector2 pos, Vector2 dir) {
-		super(TextureManager.ENEMY, pos, dir);
+	public Boss(int bufferRate, EntityManager entityManager) {
+		super(TextureManager.BOSS, new Vector2(MainGame.WIDTH/2 , MainGame.HEIGHT - TextureManager.BOSS.getHeight() - Hud distance, new Vector2(300, 0);
+		this.bufferRate = bufferRate;
+		this.entityManager = entityManager;
+		startTime = TimeUtils.millis();
 	}
 
 	@Override
 	public void update() {
 		position.add(direction);
 		bounceOff();
+		if(((int)TimeUtils.timeSinceMillis(startTime))/1000 >= bufferRate)
+			entityManager.addBullet(new Bullet(pos.cpy().add(TextureManager.BOSS.getWidth()/2, 0));
 	}
 	
 	// Same as enemy
@@ -26,8 +33,5 @@ public class Boss extends Entity {
 			setDirection(direction.x, -1*direction.y);
 		direction.setLength(5);
 	}
-	
-	// Fire projectiles
-	public 
 	
 }
