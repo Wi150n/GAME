@@ -3,10 +3,9 @@
 
 ##Team members:
 
-- Wilson Zhu (Developer)
-- Blake Allen (Developer)
-- Jason Lee (Troll on your face; Freeloader; graphics designer)
-- Aaron Dupont (Team manager)
+- Wilson Zhu (Developer -> Android)
+- Blake Allen (Developer -> Java)
+- Jason Lee (Graphics designer; Beta Tester)
+- Aaron Dupont (Team manager; Beta Tester)
 
-# NOTE: PLEASE PLACE ALL YOUR DAMN PNG FILES IN THE PNG_FOLDER
-## DEBUGGING: http://www.dummies.com/how-to/content/how-to-test-an-android-app-on-a-real-device.html
+# APRIL 21, 2016 => PROJECT COMPLETED!
