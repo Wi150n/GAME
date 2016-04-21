@@ -8,4 +8,4 @@
 - Jason Lee (Graphics designer; Beta Tester)
 - Aaron Dupont (Team manager; Beta Tester)
 
-# APRIL 21, 2016 => PROJECT COMPLETED!
+# PROJECT COMPLETED!
