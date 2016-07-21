@@ -9,3 +9,5 @@
 - Aaron Dupont (Team manager; Beta Tester)
 
 # PROJECT COMPLETED!
+
+Other things to do: make a GNU license, refine the application (make it pretty)
