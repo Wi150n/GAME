@@ -10,4 +10,4 @@
 
 # PROJECT COMPLETED!
 
-Other things to do: make a GNU license, refine the application (make it pretty)
+Other things to do: make a GNU license
