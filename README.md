@@ -3,11 +3,9 @@
 
 ##Team members:
 
-- Wilson Zhu (Developer -> Android)
-- Blake Allen (Developer -> Java)
+- Wilson Zhu (Developer)
+- Blake Allen (Developer)
 - Jason Lee (Graphics designer; Beta Tester)
 - Aaron Dupont (Team manager; Beta Tester)
 
 # PROJECT COMPLETED!
-
-Other things to do: make a GNU license
